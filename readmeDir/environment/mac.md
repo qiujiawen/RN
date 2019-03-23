@@ -111,6 +111,14 @@ brew install flow
 
 #### 7、创建、编译项目
 
+*   注意：先安装 react-native-cli
+
+React Native的命令行工具用于执行创建、初始化、更新项目、运行打包服务（packager）等任务。
+
+```
+npm install -g react-native-cli
+```
+
 a、使用 React Native 命令行工具来创建一个名为"MyApp"的新项目
 
 ```
