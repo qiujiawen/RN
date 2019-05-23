@@ -22,11 +22,11 @@ Flow是一个静态的JS类型检查工具。译注：你在很多示例中看�
 
 下载完后，双击安装 python-2.7.13.amd64.msi，安装完后，配置环境变量,在path的最前面添加python的安装路径，如图：
 
-![python](./img/python.png)
+![python](../img/python.png)
 
 重打开cmd命令，输入python -v 后出现如下图则python 环境配置成功：
 
-![python1](./img/python1.png)
+![python1](../img/python1.png)
 
 #### 7、Java 安装
 
@@ -36,15 +36,15 @@ Flow是一个静态的JS类型检查工具。译注：你在很多示例中看�
 
 点击系统变量的“ 新建”–>输入 JAVA_HOME以及jdk安装路径，如图：
 
-![java](./img/Java.png)
+![java](../img/Java.png)
 
 在系统变量里找到Path,双击在变量值的最前面加上 %JAVA_HOME%\bin;后，点击确定。如图：
 
-![java](./img/java1.png)
+![java](../img/java1.png)
 
 重打开cmd命令，输入 java -version 后出现如下图则java环境配置成功：
 
-![java](./img/java2.png)
+![java](../img/java2.png)
 
 #### 8、安装 Android Studio
 
@@ -62,7 +62,7 @@ Flow是一个静态的JS类型检查工具。译注：你在很多示例中看�
 
 打开cmd命令，输入adb 后出现如下图则android 环境配置成功：
 
-![Android](./img/Android.png)
+![Android](../img/Android.png)
 
 #### 9、安装 react-native-cli
 
@@ -75,7 +75,7 @@ npm install -g react-native-cli
 
 如果成功的话，如下图所示：
 
-![react-native](./img/react-native.png)
+![react-native](../img/react-native.png)
 
 #### 测试React-Native是否搭建好
 
@@ -89,18 +89,26 @@ npm install -g react-native-cli
 
 React-Native如果搭建好的话，会自动弹出下图：
 
-![welcome](./img/welcome.jpeg)
+![welcome](../img/welcome.jpeg)
 
 # 搭建环境过程中问题记录
 
 ## 遇到的bug（一）
 
-![bug](./img/bug.png)
+![bug](../img/bug.png)
 
 解决方案：进入项目，在android/app/src/main下新建assets目录；在编辑器的Terminal命令行中输入
 
+安卓下：
+
 ```
-react-native bundle --platform android --dev false --entry-file index.android.js --bundle-output app/src/main/assets/index.android.bundle --assets-dest app/src/main/assets
+react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res/
+```
+
+iOS下：
+
+```
+react-native bundle --entry-file index.js --bundle-output ./ios/bundle/index.ios.jsbundle --platform ios --assets-dest ./ios/bundle --dev false
 ```
 
 *  扩展：打离线包-原生RN命令打包

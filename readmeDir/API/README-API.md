@@ -6,6 +6,10 @@
 
 1、React 是由Facebook推出的一个JavaScript框架，主要用于前段开发。
 
+<a href='http://www.reactnativeexpress.com/'>参考资料</a>
+
+<a href='https://facebook.github.io/react-native/docs/getting-started.html'>官方文档</a>
+
 2、React 采用组件化方式简化Web开发
 
     a、DOM:每个HTML界面可以看做一个DOM

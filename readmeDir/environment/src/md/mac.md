@@ -105,9 +105,9 @@ brew install flow
 
 如下图所示：
 
-![xcode](./img/xcode1.png)
+![xcode](../img/xcode1.png)
 
-![xcode](./img/xcode2.png)
+![xcode](../img/xcode2.png)
 
 #### 7、创建、编译项目
 
@@ -144,11 +144,11 @@ react-native run-ios
 
 *    第一步，找到 .rncache 文件
 
-![compile](./img/compile1.png)
+![compile](../img/compile1.png)
 
 *    第二步，第三方编译库复制到 .rncache 文件下
 
-![compile](./img/compile2.png)
+![compile](../img/compile2.png)
 
 ## Android 安装流程
 
@@ -192,3 +192,25 @@ e.更新：source .bash_profile
 #### 8、编译并运行 React Native 应用
 
 参考资料react-native官网：https://facebook.github.io/react-native/
+
+## 指定模拟器
+
+1、ios
+
+```
+react-native run-ios --simulator "iPhone 7 Plus"
+```
+
+查看当前可用的所有设备/模拟器列表：
+
+```
+xcrun simctl list devices
+```
+
+2、Android
+
+查看当前可用的所有设备/模拟器列表：
+
+```
+adb devices
+```
